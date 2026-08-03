@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion'
 import { Particles } from '../ui/Particles'
 
-const teamNames = ['Ahmed Hsini', 'Emna Missaoui', 'Yosr Samali']
-
 export function HeroSlide() {
   return (
     <section

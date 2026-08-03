@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion'
-import { siGithub } from 'simple-icons'
 import { teamMembers } from '../../data/team'
 import { Particles } from '../ui/Particles'
-import { BrandLogo } from '../ui/BrandLogo'
 import { TeamPhoto } from '../ui/TeamPhoto'
 
 const sprints = [
