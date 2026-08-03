@@ -19,6 +19,7 @@ import { ThankYouSlide } from './components/slides/ThankYouSlide'
 
 const sections = [
   { id: 'hero', label: 'Intro' },
+  { id: 'team', label: 'Team' },
   { id: 'goal', label: 'Goal' },
   { id: 'stack', label: 'Stack' },
   { id: 'architecture', label: 'Architecture' },
@@ -28,7 +29,6 @@ const sections = [
   { id: 'sprint2', label: 'Sprint 2' },
   { id: 'mockups', label: 'Mockups' },
   { id: 'status', label: 'Status' },
-  { id: 'team', label: 'Team' },
   { id: 'contributions', label: 'Contributions' },
   { id: 'next', label: 'Next' },
   { id: 'thanks', label: 'Thanks' },
@@ -105,6 +105,7 @@ function App() {
       )}
       <main className="snap-container relative">
         <HeroSlide />
+        <TeamSlide />
         <GoalSlide />
         <TechStackSlide />
         <ArchitectureSlide />
@@ -114,7 +115,6 @@ function App() {
         <Sprint2Slide />
         <MockupsSlide />
         <StatusSlide />
-        <TeamSlide />
         <ContributionsSlide />
         <NextSprintSlide />
         <ThankYouSlide />
