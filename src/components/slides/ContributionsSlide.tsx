@@ -8,15 +8,14 @@ const contributions = [
     role: 'Full Stack Developer',
     items: [
       'Project Management',
-      'Architecture',
       'User Backend Development',
       'RBAC',
       'Integration',    ],
   },
   {
     name: 'Emna Missaoui',
-    role: 'Full Stack Developer',
-    items: ['Backend', 'Event Management', 'Session Management'],
+    role: 'Software & DevSecops Engineer',
+    items: ['Backend', 'Event Management','Architecture', 'Session Management'],
   },
   {
     name: 'Yosr Samali',
