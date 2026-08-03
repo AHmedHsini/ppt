@@ -71,15 +71,14 @@ export function MockupsSlide() {
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
           >
             <BrowserFrame title={current.title}>
-              <div className="relative aspect-[16/10] overflow-hidden">
+              <div className="flex max-h-[58vh] items-center justify-center bg-[#0d1420] p-2 sm:p-3">
                 <img
                   src={current.src}
                   alt={current.caption}
-                  className="h-full w-full object-cover object-top"
+                  className="max-h-[54vh] w-full object-contain"
                   loading="lazy"
                   decoding="async"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
               </div>
             </BrowserFrame>
             <motion.p
@@ -108,11 +107,11 @@ export function MockupsSlide() {
               transition={{ duration: 0.45, delay: i * 0.08 }}
               whileHover={{ y: -4 }}
             >
-              <div className="aspect-[16/10] overflow-hidden">
+              <div className="flex aspect-[16/10] items-center justify-center bg-[#0d1420] p-1.5">
                 <img
                   src={mockup.src}
                   alt={mockup.caption}
-                  className="h-full w-full object-cover object-top"
+                  className="h-full w-full object-contain"
                   loading="lazy"
                   decoding="async"
                 />
