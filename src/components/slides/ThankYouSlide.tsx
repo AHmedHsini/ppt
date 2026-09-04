@@ -7,6 +7,7 @@ const sprints = [
   { name: 'Sprint 0', mark: '✅', tone: 'text-emerald-300' },
   { name: 'Sprint 1', mark: '✅', tone: 'text-emerald-300' },
   { name: 'Sprint 2', mark: '✅', tone: 'text-emerald-300' },
+  { name: 'Sprint 3', mark: '✅', tone: 'text-emerald-300' },
 ]
 
 export function ThankYouSlide() {

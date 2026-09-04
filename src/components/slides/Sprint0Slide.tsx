@@ -20,7 +20,10 @@ const items = [
 export function Sprint0Slide() {
   return (
     <Section id="sprint0">
-      <SectionTitle eyebrow="Foundation" title="Sprint 0" />
+      <SectionTitle eyebrow="Planning" title="Sprint 0" />
+      <p className="mb-5 text-center font-body text-xs uppercase tracking-[0.28em] text-emerald-300 sm:text-sm">
+        Analysis · Architecture · Design · Completed
+      </p>
       <div className="mx-auto grid max-w-4xl grid-cols-2 gap-4 sm:gap-5 md:grid-cols-3 lg:grid-cols-5">
         {items.map((item, i) => {
           const Icon = item.icon

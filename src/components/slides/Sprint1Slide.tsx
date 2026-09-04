@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import {
   Boxes,
   KeyRound,
@@ -24,7 +25,16 @@ const features = [
 export function Sprint1Slide() {
   return (
     <Section id="sprint1">
-      <SectionTitle eyebrow="Core Platform" title="Sprint 1" />
+      <SectionTitle eyebrow="Foundation" title="Sprint 1" />
+      <motion.p
+        className="mb-5 text-center font-body text-xs uppercase tracking-[0.28em] text-emerald-300 sm:text-sm"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false }}
+        transition={{ duration: 0.45 }}
+      >
+        Auth · RBAC · Events · Completed
+      </motion.p>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
         {features.map((feature, i) => {
           const Icon = feature.icon
