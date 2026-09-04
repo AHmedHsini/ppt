@@ -32,11 +32,11 @@ const sections = [
   { id: 'sprint2', label: 'Sprint 2' },
   { id: 'sprint3', label: 'Sprint 3' },
   { id: 'mockups', label: 'Product' },
-  { id: 'demo', label: 'Demo' },
   { id: 'security', label: 'Security' },
   { id: 'status', label: 'Status' },
   { id: 'contributions', label: 'Contributions' },
   { id: 'next', label: 'Delivered' },
+  { id: 'demo', label: 'Demo' },
   { id: 'thanks', label: 'Thanks' },
 ]
 
@@ -121,11 +121,11 @@ function App() {
         <Sprint2Slide />
         <Sprint3Slide />
         <MockupsSlide />
-        <DemoSlide />
         <SecurityDevOpsSlide />
         <StatusSlide />
         <ContributionsSlide />
         <NextSprintSlide />
+        <DemoSlide />
         <ThankYouSlide />
       </main>
     </>
