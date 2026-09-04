@@ -12,6 +12,7 @@ import { Sprint1Slide } from './components/slides/Sprint1Slide'
 import { Sprint2Slide } from './components/slides/Sprint2Slide'
 import { Sprint3Slide } from './components/slides/Sprint3Slide'
 import { MockupsSlide } from './components/slides/MockupsSlide'
+import { DemoSlide } from './components/slides/DemoSlide'
 import { SecurityDevOpsSlide } from './components/slides/SecurityDevOpsSlide'
 import { StatusSlide } from './components/slides/StatusSlide'
 import { TeamSlide } from './components/slides/TeamSlide'
@@ -31,6 +32,7 @@ const sections = [
   { id: 'sprint2', label: 'Sprint 2' },
   { id: 'sprint3', label: 'Sprint 3' },
   { id: 'mockups', label: 'Product' },
+  { id: 'demo', label: 'Demo' },
   { id: 'security', label: 'Security' },
   { id: 'status', label: 'Status' },
   { id: 'contributions', label: 'Contributions' },
@@ -119,6 +121,7 @@ function App() {
         <Sprint2Slide />
         <Sprint3Slide />
         <MockupsSlide />
+        <DemoSlide />
         <SecurityDevOpsSlide />
         <StatusSlide />
         <ContributionsSlide />
