@@ -4,27 +4,62 @@ import { Section } from '../ui/Section'
 import { SectionTitle } from '../ui/SectionTitle'
 import { BrowserFrame } from '../ui/BrowserFrame'
 
-const mockups = [
+const screenshots = [
   {
     id: 'landing',
     label: 'Landing',
     title: 'ieee-checkin.app',
-    src: '/mockups/landing.png',
-    caption: 'Landing Page',
+    src: '/screenshots/landing.png',
+    caption: 'Public Landing — PESTGM 7.0',
   },
   {
-    id: 'organizer',
-    label: 'Organizer',
-    title: 'ieee-checkin.app / organizer',
-    src: '/mockups/organizer.png',
-    caption: 'Organizer Workspace',
+    id: 'login',
+    label: 'Login',
+    title: 'ieee-checkin.app / login',
+    src: '/screenshots/login.png',
+    caption: 'Sign-in Workspace',
   },
   {
-    id: 'volunteer',
-    label: 'Volunteer',
-    title: 'ieee-checkin.app / volunteer',
-    src: '/mockups/volunteer.png',
-    caption: 'Volunteer Check-in',
+    id: 'org',
+    label: 'Dashboard',
+    title: 'ieee-checkin.app / dashboard',
+    src: '/screenshots/org-dashboard.png',
+    caption: 'Organization Dashboard',
+  },
+  {
+    id: 'events',
+    label: 'Events',
+    title: 'ieee-checkin.app / events',
+    src: '/screenshots/events.png',
+    caption: 'Events & Sessions',
+  },
+  {
+    id: 'checkin',
+    label: 'Check-in',
+    title: 'ieee-checkin.app / check-in',
+    src: '/screenshots/check-in.png',
+    caption: 'QR Check-in Desk',
+  },
+  {
+    id: 'attendance',
+    label: 'Attendance',
+    title: 'ieee-checkin.app / attendance',
+    src: '/screenshots/attendance.png',
+    caption: 'Live Attendance',
+  },
+  {
+    id: 'analytics',
+    label: 'Analytics',
+    title: 'ieee-checkin.app / analytics',
+    src: '/screenshots/analytics.png',
+    caption: 'Analytics & Charts',
+  },
+  {
+    id: 'platform',
+    label: 'Platform',
+    title: 'ieee-checkin.app / platform',
+    src: '/screenshots/platform.png',
+    caption: 'Platform Administration',
   },
 ]
 
@@ -33,30 +68,30 @@ export function MockupsSlide() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setIndex((prev) => (prev + 1) % mockups.length)
+      setIndex((prev) => (prev + 1) % screenshots.length)
     }, 4200)
     return () => clearInterval(timer)
   }, [])
 
-  const current = mockups[index]
+  const current = screenshots[index]
 
   return (
     <Section id="mockups">
-      <SectionTitle eyebrow="Product Design" title="UI Mockups" />
+      <SectionTitle eyebrow="Live Product" title="Platform Screenshots" />
 
       <div className="mb-6 flex flex-wrap justify-center gap-2">
-        {mockups.map((mockup, i) => (
+        {screenshots.map((shot, i) => (
           <button
-            key={mockup.id}
+            key={shot.id}
             type="button"
             onClick={() => setIndex(i)}
-            className={`rounded-full px-4 py-1.5 font-body text-sm transition-all duration-300 ${
+            className={`rounded-full px-3 py-1.5 font-body text-sm transition-all duration-300 sm:px-4 ${
               index === i
                 ? 'bg-ieee text-white shadow-[0_8px_24px_rgba(0,98,155,0.35)]'
                 : 'bg-white/5 text-white/50 hover:bg-white/10'
             }`}
           >
-            {mockup.label}
+            {shot.label}
           </button>
         ))}
       </div>
@@ -71,7 +106,7 @@ export function MockupsSlide() {
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
           >
             <BrowserFrame title={current.title}>
-              <div className="flex max-h-[58vh] items-center justify-center bg-[#0d1420] p-2 sm:p-3">
+              <div className="flex max-h-[58vh] items-center justify-center bg-[#e8eef5] p-2 sm:p-3">
                 <img
                   src={current.src}
                   alt={current.caption}
@@ -92,10 +127,10 @@ export function MockupsSlide() {
           </motion.div>
         </AnimatePresence>
 
-        <div className="mt-6 grid gap-3 sm:grid-cols-3">
-          {mockups.map((mockup, i) => (
+        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {screenshots.map((shot, i) => (
             <motion.button
-              key={mockup.id}
+              key={shot.id}
               type="button"
               onClick={() => setIndex(i)}
               className={`glass overflow-hidden rounded-xl text-left transition-all ${
@@ -104,20 +139,20 @@ export function MockupsSlide() {
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}
-              transition={{ duration: 0.45, delay: i * 0.08 }}
+              transition={{ duration: 0.45, delay: i * 0.04 }}
               whileHover={{ y: -4 }}
             >
-              <div className="flex aspect-[16/10] items-center justify-center bg-[#0d1420] p-1.5">
+              <div className="flex aspect-[16/10] items-center justify-center bg-[#e8eef5] p-1.5">
                 <img
-                  src={mockup.src}
-                  alt={mockup.caption}
+                  src={shot.src}
+                  alt={shot.caption}
                   className="h-full w-full object-contain"
                   loading="lazy"
                   decoding="async"
                 />
               </div>
               <p className="px-3 py-2.5 font-display text-sm font-semibold">
-                {mockup.caption}
+                {shot.caption}
               </p>
             </motion.button>
           ))}

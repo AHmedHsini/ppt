@@ -6,7 +6,7 @@ import { TeamPhoto } from '../ui/TeamPhoto'
 const sprints = [
   { name: 'Sprint 0', mark: '✅', tone: 'text-emerald-300' },
   { name: 'Sprint 1', mark: '✅', tone: 'text-emerald-300' },
-  { name: 'Sprint 2', mark: '🚧', tone: 'text-amber-300' },
+  { name: 'Sprint 2', mark: '✅', tone: 'text-emerald-300' },
 ]
 
 export function ThankYouSlide() {
@@ -30,7 +30,7 @@ export function ThankYouSlide() {
           viewport={{ once: false }}
           transition={{ duration: 0.5 }}
         >
-          Current Progress
+          All Sprints Delivered
         </motion.p>
 
         <div className="mb-10 flex flex-wrap items-center justify-center gap-3 sm:gap-4">

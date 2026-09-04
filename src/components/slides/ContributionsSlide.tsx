@@ -8,23 +8,30 @@ const contributions = [
     role: 'Full Stack Developer',
     items: [
       'Project Management',
-      'User Backend Development',
-      'RBAC',
-      'Integration',    ],
+      'Auth & RBAC',
+      'Frontend Modules',
+      'Dashboards & Analytics',
+      'Integration',
+    ],
   },
   {
     name: 'Emna Missaoui',
     role: 'Software & DevSecops Engineer',
-    items: ['Backend', 'Event Management','Architecture', 'Session Management'],
+    items: [
+      'Architecture',
+      'Event & Session APIs',
+      'Organizations',
+      'CI & Quality',
+    ],
   },
   {
     name: 'Yosr Samali',
     role: 'Full Stack Developer',
     items: [
-      'Backend',
-      'Participant Management',
-      'QR Code Management',
+      'Participants',
+      'QR Codes',
       'Check-in Scanner',
+      'Attendance & Reports',
     ],
   },
 ]

@@ -4,23 +4,15 @@ import { ProgressBar } from '../ui/ProgressBar'
 
 const progress = [
   { label: 'Backend Foundation', value: 100, tone: 'complete' as const },
-  { label: 'Authentication', value: 100, tone: 'complete' as const },
-  { label: 'RBAC', value: 100, tone: 'complete' as const },
-  { label: 'Events Backend', value: 100, tone: 'complete' as const },
-  { label: 'Sessions Backend', value: 100, tone: 'complete' as const },
-  { label: 'Participants Backend', value: 100, tone: 'complete' as const },
-  { label: 'QR Backend', value: 100, tone: 'complete' as const },
-  { label: 'Scanner Backend', value: 100, tone: 'complete' as const },
-  {
-    label: 'Frontend Business Modules',
-    status: 'In Progress',
-    tone: 'progress' as const,
-  },
-  {
-    label: 'Reports',
-    status: 'Not Started',
-    tone: 'pending' as const,
-  },
+  { label: 'Authentication & RBAC', value: 100, tone: 'complete' as const },
+  { label: 'Events & Sessions', value: 100, tone: 'complete' as const },
+  { label: 'Participants & QR', value: 100, tone: 'complete' as const },
+  { label: 'Check-in Scanner', value: 100, tone: 'complete' as const },
+  { label: 'Frontend Modules', value: 100, tone: 'complete' as const },
+  { label: 'Attendance & Analytics', value: 100, tone: 'complete' as const },
+  { label: 'Audit Logs', value: 100, tone: 'complete' as const },
+  { label: 'CSV Reports', value: 100, tone: 'complete' as const },
+  { label: 'Realtime WebSocket', value: 100, tone: 'complete' as const },
 ]
 
 export function StatusSlide() {
@@ -33,7 +25,6 @@ export function StatusSlide() {
             key={item.label}
             label={item.label}
             value={item.value}
-            status={item.status}
             tone={item.tone}
             delay={i * 0.05}
           />

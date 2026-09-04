@@ -15,7 +15,7 @@ export function HeroSlide() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55 }}
         >
-          Internship Progress
+          Final Internship Presentation
         </motion.p>
 
         <motion.h1
@@ -28,6 +28,15 @@ export function HeroSlide() {
           <br />
           <span className="text-white">Check-in Platform</span>
         </motion.h1>
+
+        <motion.p
+          className="mx-auto mt-6 max-w-xl font-body text-base text-white/55 sm:text-lg"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55, delay: 0.28 }}
+        >
+          Multi-tenant QR check-in for IEEE Student Branches — delivered end to end.
+        </motion.p>
 
         <motion.div
           className="mx-auto mt-8 h-px w-24 bg-gradient-to-r from-transparent via-ieee to-transparent"

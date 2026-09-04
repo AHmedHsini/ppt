@@ -27,10 +27,10 @@ const sections = [
   { id: 'sprint0', label: 'Sprint 0' },
   { id: 'sprint1', label: 'Sprint 1' },
   { id: 'sprint2', label: 'Sprint 2' },
-  { id: 'mockups', label: 'Mockups' },
+  { id: 'mockups', label: 'Product' },
   { id: 'status', label: 'Status' },
   { id: 'contributions', label: 'Contributions' },
-  { id: 'next', label: 'Next' },
+  { id: 'next', label: 'Delivered' },
   { id: 'thanks', label: 'Thanks' },
 ]
 
