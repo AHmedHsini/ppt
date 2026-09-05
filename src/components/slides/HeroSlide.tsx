@@ -55,40 +55,28 @@ export function HeroSlide() {
             In synergy with
           </p>
 
-          <div className="flex w-full flex-wrap items-center justify-center gap-5 sm:gap-8">
-            <motion.div
-              className="flex h-16 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-3 backdrop-blur-md sm:h-[4.5rem] sm:px-6"
-              whileHover={{ y: -3, borderColor: 'rgba(26, 139, 196, 0.45)' }}
-              transition={{ duration: 0.25 }}
-            >
-              <img
-                src="/logos/ieee-sac.png"
-                alt="IEEE Tunisia Section Student Activities Committee"
-                className="h-10 w-auto object-contain sm:h-12"
-                draggable={false}
-              />
-            </motion.div>
+          <div className="flex w-full flex-wrap items-center justify-center gap-6 sm:gap-10">
+            <img
+              src="/logos/ieee-sac.png"
+              alt="IEEE Tunisia Section Student Activities Committee"
+              className="h-12 w-auto object-contain sm:h-14"
+              draggable={false}
+            />
 
             <span
-              className="hidden h-8 w-px bg-gradient-to-b from-transparent via-white/30 to-transparent sm:block"
+              className="hidden h-10 w-px bg-gradient-to-b from-transparent via-white/25 to-transparent sm:block"
               aria-hidden
             />
             <span className="font-display text-lg font-semibold text-white/30 sm:hidden" aria-hidden>
               ×
             </span>
 
-            <motion.div
-              className="flex h-16 items-center justify-center overflow-hidden rounded-2xl border border-[#ff7900]/35 bg-[#ff7900]/10 p-1.5 shadow-[0_0_32px_rgba(255,121,0,0.12)] sm:h-[4.5rem] sm:p-2"
-              whileHover={{ y: -3, borderColor: 'rgba(255, 121, 0, 0.65)' }}
-              transition={{ duration: 0.25 }}
-            >
-              <img
-                src="/logos/orange.png"
-                alt="Orange"
-                className="h-full w-auto rounded-xl object-contain"
-                draggable={false}
-              />
-            </motion.div>
+            <img
+              src="/logos/orange.png"
+              alt="Orange"
+              className="h-12 w-auto object-contain sm:h-14"
+              draggable={false}
+            />
           </div>
         </motion.div>
       </div>
