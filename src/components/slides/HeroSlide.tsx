@@ -62,8 +62,8 @@ export function HeroSlide() {
               transition={{ duration: 0.25 }}
             >
               <img
-                src="/logos/ieee-tunisia-section-dark.webp"
-                alt="IEEE Tunisia Section"
+                src="/logos/ieee-sac.png"
+                alt="IEEE Tunisia Section Student Activities Committee"
                 className="h-10 w-auto object-contain sm:h-12"
                 draggable={false}
               />
