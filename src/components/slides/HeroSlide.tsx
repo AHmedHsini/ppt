@@ -57,12 +57,12 @@ export function HeroSlide() {
 
           <div className="flex w-full flex-wrap items-center justify-center gap-5 sm:gap-8">
             <motion.div
-              className="flex h-16 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-3 backdrop-blur-md sm:h-[4.5rem] sm:px-6"
+              className="flex h-16 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-3 backdrop-blur-md sm:h-[4.5rem] sm:px-6"
               whileHover={{ y: -3, borderColor: 'rgba(26, 139, 196, 0.45)' }}
               transition={{ duration: 0.25 }}
             >
               <img
-                src="/logos/ieee-tunisia-section.webp"
+                src="/logos/ieee-tunisia-section-dark.webp"
                 alt="IEEE Tunisia Section"
                 className="h-10 w-auto object-contain sm:h-12"
                 draggable={false}
