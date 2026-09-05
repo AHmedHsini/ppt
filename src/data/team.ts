@@ -20,8 +20,8 @@ export const teamMembers: TeamMember[] = [
   {
     name: 'Emna Missaoui',
     role: 'Software & DevSecops Engineer',
-    photo: '/team/emna.jpg',
-    objectPosition: 'center 30%',
+    photo: '/team/emna.png',
+    objectPosition: 'center 18%',
     responsibilities: [
     ],
   },
